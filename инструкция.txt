@@ -1,0 +1,14 @@
+# Установка зависимостей
+pip install -r requirements.txt
+
+# Создание директорий
+#linux
+mkdir -p static/uploads static/results weights
+#win
+New-Item -ItemType Directory -Path 'static\uploads','static\results','weights' -Force
+
+# Запуск приложения
+python app.py
+
+# Доступ:
+http://127.0.0.1:5000/
